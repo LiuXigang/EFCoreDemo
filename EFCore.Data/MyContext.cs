@@ -9,7 +9,7 @@ namespace EFCore.Data
         public DbSet<City> Cities { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=EFCoreDemo;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer("Server=127.0.0.1;Database=EFCoreDemo;Trusted_Connection=True;");
         }
     }
 }
